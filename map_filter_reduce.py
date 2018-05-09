@@ -23,3 +23,4 @@ diff= [x for x in items if x<4]
 
 print(diff)
 
+#reduce() example
