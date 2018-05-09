@@ -1,3 +1,5 @@
+from functools import reduce
+
 #map() example
 #map applies a function to all the items from a list
 items = [1, 2, 3, 4, 5]
@@ -24,3 +26,14 @@ diff= [x for x in items if x<4]
 print(diff)
 
 #reduce() example
+#reduce is performing some computation on a list and returns the result
+
+product = reduce((lambda x, y: x * y), items)
+
+print(product)
+
+#more pythonic way
+product=1
+for i in items:
+    product *= i
+print(product)
